@@ -27,7 +27,7 @@ submit_cs_course: CS56_w18
 
 start_week: 0
 start_date: 2018-01-07 00:00:00.00-8:00
-num_weeks: 11
+num_weeks: 10
 extra_exam_week: true
 sections: "4pm,&nbsp;5pm or&nbsp;6pm"
 
