@@ -6,9 +6,11 @@ ready: true
 
 # Lab Seating Chart, 4pm
 
+<style>
+iframe { width: 100%; height: 1400px; overflow: scroll; }  
+</style>
 
-<iframe style="width:100%; height:1400px;  overflow: scroll;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTavLN9ztLskzzsxxpoK4SK92km-3SX8i8O8MHYuf2ozUNzXtvluT2YSibhP5NXzhnRN2abRH4wezZT/pubhtml?gid=2035369303&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdnjCvptBDVNEPXkQingFzFk07QUSxX3CoT-qgI514V4oLI1uYx5lON15Xr3OZNQjwNk0MDtUIysJr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 <div style="display:none;">
-
 </div>
