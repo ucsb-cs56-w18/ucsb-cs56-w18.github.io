@@ -12,6 +12,7 @@ Basic Facts
 * **Instructor**:  [Phill Conrad](http://www.cs.ucsb.edu/~pconrad)
 * **Lecture**: TR 11am-12:15pm Phelps 3526, ATTENDANCE REQUIRED.
 * **TAs**: {{site.ta_list_full}} (contact via Piazza)
+* **Reader**: Ishani Gupta (contact via Piazza)
 * **Mentors**: {{site.mentors_list}} (contact via Piazza)
 * **Lab** (50 minute discussion section) Thursday {{site.discussion_section_times}}, Phelps 3525, ATTENDANCE REQUIRED.                                         
 * Office Hours: See: <http://www.cs.ucsb.edu/~pconrad/ofchrs>  
