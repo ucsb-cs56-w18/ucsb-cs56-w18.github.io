@@ -9,7 +9,8 @@ ready: false
 Basic Facts
 -----------
 
-* **Instructor**:  [Phill Conrad](http://www.cs.ucsb.edu/~pconrad)
+* **Instructor**:  [Phill Conrad](http://www.cs.ucsb.edu/~pconrad) (contact via Piazza)
+   * Use the "instructor messsage" feature to contact Prof. Conrad, as well as all TAs, Readers and Mentors
 * **Lecture**: TR 11am-12:15pm Phelps 3526, ATTENDANCE REQUIRED.
 * **TAs**: {{site.ta_list_full}} (contact via Piazza)
 * **Reader**: Ishani Gupta (contact via Piazza)
