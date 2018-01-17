@@ -80,14 +80,14 @@ A+ grades: These may be awarded to the very best performing students in the clas
 | Labs (typically closed source, some open source) | 10 % |
 | Projects (open source) | 20 % |
 
-Missing homework/in-class activities: Drop the lowest 4
+Missing homework/in-class activities: Drop the lowest {{ site.hwk_drop_lowest }}
 -------------------------------------------------------
 
 If you miss a class, you miss the opportunity for the points on that
 in-class assignment, or homework that was due. Period.
 
 There is no makeup. In lieu of providing a makeup opportunity, I will
-drop the lowest 4 homework/in-class-assignment grades (which may be
+drop the lowest {{ site.hwk_drop_lowest }} homework/in-class-assignment grades (which may be
 zeros if you miss an assignment.) Each homework and in-class-activity
 will be of equal value (100 pts).
 
