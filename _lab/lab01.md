@@ -87,11 +87,17 @@ Overview of this lab
 
     Do a `ls` to verify that it got created.
 
-10. To see it online, go to your repo on github.com, and under Settings
+10. To put in online, go to your repo on github.com, and under Settings
    for your repo, find the section for Github Pages, and select the
    master branch and `docs` folder as shown here:
 
     ![docs folder](gh3.png)
+    
+   Visit the url shown there.  You may have to add `/javadoc` at the end of the URL.
+   
+   Edit the README.md for your repo and put the correct javadoc link into the README.md in place of the one that
+   you see in the placeholder text there.   While you are there, read through the README.md that came with the starter
+   code, and make other adjustments as indicated.
 
 9.  You are now ready to work on the programming part of the lab.
 
@@ -99,7 +105,11 @@ Overview of this lab
 
     -  Follow the detailed instructions below to complete the programming part of the assignment.
 
-11. When you are finished, be sure you have done a "git push origin master" to push your changes to github.
+11. When you are finished, be sure you have
+    * done an `ant compile`, `ant test`, `ant javadoc` on the final version.
+    * done a `git status` to see if any changes (e.g. changes to code, build.xml, javadoc) need to be added, committed and pushed)
+    * done a final `git push origin master` to push your changes to github.
+    
     Then, you can download a .zip version of your assignment from github, rename it to `lab01.zip`, and 
     submit via submit.cs at this link: <{{page.submit_cs}}> 
 
@@ -108,7 +118,6 @@ Overview of this lab
         you do this, and then "rezip" it before submitting, it can
         mess up the structure of the file in a way that causes it to
         fail the tests on submit.cs.
-
 
 Detailed Instructions for Programming Assignment
 ================================================
@@ -144,3 +153,10 @@ So, don't repeat yourself:
 * Define addition before subtraction, and then define subtraction in terms of addition and multiplication.
 * Define reciprocal before division, then define division as multiplication by the reciprocal.
 
+# Grading:
+
+* Part of your grade is determined by the points shown on submit.cs
+* The remainder is determined by the following:
+   * (25 pts) Did you follow the instructions for setting up your repo? (naming, making it private, pulling in starter code,
+     adding partner as collaborator)
+   * (25 pts) Did you publish your javadoc correctly, link to it from your README, and in general, tidy up your README as indicated?
