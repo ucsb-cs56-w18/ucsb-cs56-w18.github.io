@@ -13,9 +13,9 @@ starter_repo: "https://github.com/ucsb-cs56-w18/STARTER_lab02"
 In this lab:
 
 -   using inheritance
--   using an ArrayList
--   overriding equals
--   overriding toString
+-   using an `ArrayList`
+-   overriding `equals`
+-   overriding `toString`
 -   problem solving
 
 Step-by-Step
