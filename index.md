@@ -32,6 +32,9 @@ title: CS56, Winter 2018, pconrad
 
 <div data-role="collapsible" data-collapsed="false">
 <h2 id="teams">Lectures</h2>
+
+See also: [LECTURE* repos](https://github.com/ucsb-cs56-w18?utf8=%E2%9C%93&q=LECTURE&type=&language=) from <https://github.com/ucsb-cs56-w18>
+  
 {%include lectures_table.html %}
 </div>
 
