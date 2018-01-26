@@ -23,13 +23,13 @@ Step-by-Step
 
 # Step 0: Set up your repo
 
-This lab will build on the material we introduced about Ant and JUnit in [lab01](/labs/lab01/).
+This lab will build on the material we introduced about Ant and JUnit in [lab01](/lab/lab01/).
 
 You will also apply what you are learning from your reading about inheritance, object equality, and using the ArrayList class.
 
 You may work as a pair, or individually on this lab (your choice).  Name your repo as appropriate.
 
-Create your repo the same way you did for [lab01](/labs/lab01/):
+Create your repo the same way you did for [lab01](/lab/lab01/):
 
    * under the <tt>{{page.org}}</tt> organization
    * name should be <tt>{{page.num}}-githubid</tt> OR <tt>{{page.num}}-githubid1-githubid2</tt> as appropriate
