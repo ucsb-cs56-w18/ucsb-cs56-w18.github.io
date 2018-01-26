@@ -39,7 +39,7 @@ Overview of this lab
 
         ![creating](gh1.png)
 
-    - The result should look like this:
+    - The result should look like this.   (Note: **Ignore** the instructions labelled "... or create a new repository at the command line" that show up on that web page&mdash;they've been cropped out for a reason.  We are going to do something slightly different, so **follow the instructions below** instead.)
 
         ![result](gh2.png)
 	
