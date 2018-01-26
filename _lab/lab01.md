@@ -4,7 +4,7 @@ num: lab01
 ready: true
 desc: "Tools for java development"
 assigned: 2018-01-25 16:00:00.00-8
-due: 2017-01-31 23:59:00.00-8
+due: 2018-01-31 23:59:00.00-8
 submit_cs: https://submit.cs.ucsb.edu/form/project/940/submission
 org: ucsb-cs56-w18
 herokuapp: https://ucsb-cs56-w18-signup.herokuapp.com
