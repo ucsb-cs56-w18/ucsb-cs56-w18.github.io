@@ -43,6 +43,8 @@ Overview of this lab
 
         ![result](gh2.png)
 	
+    - Be sure to add your pair partner as a [collaborator on the github repo](https://ucsb-cs56-pconrad.github.io/topics/github_add_collaborator/).
+	
 
 2.  Configure your CSIL account for git
     - [Detailed Instructions](https://ucsb-cs56-pconrad.github.io/topics/csil_git_configuration/)
