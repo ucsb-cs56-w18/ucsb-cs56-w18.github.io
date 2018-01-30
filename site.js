@@ -31,6 +31,22 @@ function countPoints(n) {                     // n is a Node
 
 $(document).ready(function(){
     console.log("site.js: document is ready");
+
+    $('.template').each(function(i) {
+	$(this).css('display','none');
+    });
+
+    // Use with  <div class="copy-of" data-id="foo"></div>
+    // Use   <div id="foo" class="template"></div> on the stuff you want to copy
+    // The class="template" will hide it the first time.
+    // The  class="copy-of" data-id="foo" signals that you want a copy of foo inserted here.
+    
+    $('.copy-of').each(function(i) {
+	var id = $(this).data('id')
+	$(this).html($(document.getElementById(id)).clone().html());
+    });
+
+
     $('[data-hfj]').each(function() {
 	var chapter_num = $(this).data('hfj');
 	var href = "{{ site.hfj_chapter_url_prefix }}" + chapter_num;
