@@ -4,7 +4,7 @@ num: lab02
 ready: true
 desc: "Polynomials"
 assigned: 2018-01-25 16:00:00.00-8
-due: 2018-02-05 23:59.00-8
+due: 2018-02-12 23:59.00-8
 submit_cs_link: "https://submit.cs.ucsb.edu/form/project/941/submission"
 github_org: "ucsb-cs56-w18"
 starter_repo: "https://github.com/ucsb-cs56-w18/STARTER_lab02"
