@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: proj00
-ready: false
+ready: true
 desc: "First look at Legacy Code"
 assigned: 2018-02-01 16:00:00.00-8
 due: 2018-02-09 17:00:00.00-8
