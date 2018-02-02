@@ -23,7 +23,7 @@ If you have not yet been assigned to a mentor and pair, please contact your TA o
 Together with your pair partner, you will do the following steps.   Note: this list is just an <em>overview</em> of the entire process, so that you can see a <em>short</em> list of all the things you need to do.   You'll have to consult the rest of the instructions for details.
 
 1. Consult the seating charts for the [4pm](/info/lab_seating_chart_4pm/),
-    [5pm](/info/lab_seating_chart_4pm/) and [6pm](/info/lab_seating_chart_6pm/) 
+    [5pm](/info/lab_seating_chart_5pm/) and [6pm](/info/lab_seating_chart_6pm/) 
     sections to see which legacy code project your pair was assigned.   
    * Be sure that the page accurately reflects your mentor, github id, pair partner, and pair partner's github id.  
    * If you are not on the list, or if there is any error consult a mentor, TA or instructor to fix it.
