@@ -4,6 +4,21 @@ import org.junit.Test;
 public class FactorsTest {
 
     @Test
+    public void test_rlf() {
+	Factors f = new Factors(new int [] {2,15});
+	f.replaceLastFactor(3);
+	assertEquals(new Factors(new int [] {2,3}), f);
+    }
+	    
+    @Test
+    public void test_af() {
+	Factors f = new Factors(new int [] {2,3});
+	f.addFactor(5);
+	assertEquals(new Factors(new int [] {2,3,5}), f);
+    }
+
+    
+    @Test
     public void test1() {
 	Factors f = new Factors(new int [] {60});
 	Factors expected = new Factors(new int [] {2,30});
