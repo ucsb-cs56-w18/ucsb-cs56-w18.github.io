@@ -21,6 +21,7 @@ http://ucsb-cs56-f17.github.io/exam/e03/typos/
     your best to infer what it means, and answer on that basis.
 * For number 7, the blank should simply be filled with an expression that 
    correctly initializes the variable `lastElement`.
+* `remove` in java.util.ArrayList "Removes the element at the specified position in this list. Shifts any subsequent elements to the left (subtracts one from their indices)."  (But I don't think you need this.)
 ## Notices
 
 * IGNORE SEAT NUMBER.  Leave it blank.
