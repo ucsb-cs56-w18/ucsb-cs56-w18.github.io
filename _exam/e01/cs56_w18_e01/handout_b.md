@@ -75,6 +75,5 @@ i: 49 factors: [7, 7]
 i: 50 factors: [2, 5, 5]
 ```
 
-</div>
-
 <h2 markdown="1" class="page-break-before">Handout B Page 2</h2>
+

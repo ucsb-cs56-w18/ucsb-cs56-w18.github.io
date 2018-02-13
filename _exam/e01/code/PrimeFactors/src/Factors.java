@@ -2,6 +2,12 @@ import java.util.ArrayList;
 
 public class Factors extends ArrayList<Integer> {
 
+    public Factors(int [] nums) {
+	for (int i: nums) {
+	    this.add(i);
+	}
+    }
+    
     /* Precondition: this object contains a list of factors
        computed from some number.  All but the last is guaranteed
        to be a prime number.
@@ -28,8 +34,7 @@ public class Factors extends ArrayList<Integer> {
     }
 
     public static Factors primeFactors(int num) {
-	Factors f = new Factors();
-	f.add(num);
+	Factors f = new Factors(new int []{num});
 	int prevSize = 0;
 	while ( f.size() != prevSize) {
 	    prevSize = f.size();

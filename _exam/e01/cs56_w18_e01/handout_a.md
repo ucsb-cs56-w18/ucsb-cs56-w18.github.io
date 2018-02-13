@@ -115,7 +115,6 @@ public abstract class Product {
 The following excerpts from the javadoc for `java.util.ArrayList<E>` may be
 helpful to you in completing this exam.
 
-
 ## Inheritance Hierarchy (complete)
 
 ```
@@ -125,51 +124,6 @@ java.lang.Object
       java.util.ArrayList<E>
 ```
 
-
-<table>
-<tr>
-<td markdown="1">
-```java
-public void add(int index, E element)
-```
-
-Inserts the specified element at the specified position in this list. Shifts the element currently at that position (if any) and any subsequent elements to the right (adds one to their indices).
-
-
-Parameters:
-
-* `index` - index at which the specified element is to be inserted
-* `element` - element to be inserted
-
-Throws:
-
-* `IndexOutOfBoundsException` - if the index is out of range `(index < 0 || index > size())`
-
-</td>
-<td markdown="1">
-
-```java
-public E set(int index, E element)
-```	     
-
-Replaces the element at the specified position in this list with the specified element.
-
-Parameters:
-
-* `index` - index of the element to replace
-* `element` - element to be stored at the specified position
-
-Returns:
-
-* the element previously at the specified position
-
-Throws:
-
-* `IndexOutOfBoundsException` - if the index is out of range `(index < 0 || index >= size())`
-
-</td>
-</tr>
-</table>
 <div markdown="1"
      style="font-size: 80%; font-family: Arial Narrow, sans-serif;"
      class="hanging-indent-table">
@@ -194,7 +148,7 @@ Throws:
 <div markdown="1" class="hanging-indent-table">
 
 | `boolean` | `add(E e)` | Appends the specified element to the end of this list. |
-| `void` | `add(int index, E element)` | Inserts the specified element at the specified position in this list. |
+| `void` | `add(int index, E element)` | Inserts the specified element at the specified position in this list. <br>Shifts the element currently at that position (if any) and any subsequent elements to the right (adds one to their indices).<br>throws `IndexOutOfBoundsException` if `(index < 0 || index > size())`|
 | `void` | `clear()` | Removes all of the elements from this list.|
 | `E` | `get(int index)` | Returns the element at the specified position in this list. |
 | `int` | `indexOf(Object o)` | Returns the index of the first occurrence of the specified element in this list, <br>or -1 if this list does not contain the element. |
@@ -202,7 +156,7 @@ Throws:
 | `int`	|  `lastIndexOf(Object o)` | Returns the index of the last occurrence of the specified element in this list,<br>or -1 if this list does not contain the element. |
 | `E` | `remove(int index)` | Removes the element at the specified position in this list.|
 | `boolean` | `remove(Object o)` | Removes the first occurrence of the specified element from this list, if it is present. |
-| `E` | `set(int index, E element)` | Replaces the element at the specified position in this list with the specified element. |
+| `E` | `set(int index, E element)` | Replaces the element at the specified position in this list with the specified element.<br>Returns the element previously at the specified position<br> throws `IndexOutOfBoundsException` if `(index < 0 || index >= size())`|
 | `int` | `size()` | Returns the number of elements in this list. |
 | `void` | `sort(Comparator<? super E> c)` | Sorts this list according to the order induced by the specified `Comparator`. |
 
