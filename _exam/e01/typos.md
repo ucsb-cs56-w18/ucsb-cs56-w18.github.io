@@ -14,7 +14,7 @@ http://ucsb-cs56-f17.github.io/exam/e03/typos/
 
 ## Hints/Clarifications:
 
-For the `Factor.java` file: the pre- and post- conditions above `addNextFactor` 
+For the `Factors.java` file: the pre- and post- conditions above `addNextFactor` 
 apply *only* to the method `addNextFactor`, not to any other
 method or constructor.
 
