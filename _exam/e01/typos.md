@@ -23,7 +23,7 @@ method or constructor.
 * IGNORE SEAT NUMBER.  Leave it blank.
 * YOU MAY RIP OFF HANDOUTS
 * You may use **one sheet of notes** as usual.  Please write your name on it
-* **No talking** during the exam.  Please put all questions in writing on the blue sheet.
+* **No talking** during the exam.  Please put all questions in writing on the green sheet.
 
 
 
