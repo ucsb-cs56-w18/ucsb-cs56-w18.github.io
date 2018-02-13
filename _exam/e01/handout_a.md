@@ -125,6 +125,51 @@ java.lang.Object
       java.util.ArrayList<E>
 ```
 
+
+<table>
+<tr>
+<td markdown="1">
+```java
+public void add(int index, E element)
+```
+
+Inserts the specified element at the specified position in this list. Shifts the element currently at that position (if any) and any subsequent elements to the right (adds one to their indices).
+
+
+Parameters:
+
+* `index` - index at which the specified element is to be inserted
+* `element` - element to be inserted
+
+Throws:
+
+* `IndexOutOfBoundsException` - if the index is out of range `(index < 0 || index > size())`
+
+</td>
+<td markdown="1">
+
+```java
+public E set(int index, E element)
+```	     
+
+Replaces the element at the specified position in this list with the specified element.
+
+Parameters:
+
+* `index` - index of the element to replace
+* `element` - element to be stored at the specified position
+
+Returns:
+
+* the element previously at the specified position
+
+Throws:
+
+* `IndexOutOfBoundsException` - if the index is out of range `(index < 0 || index >= size())`
+
+</td>
+</tr>
+</table>
 <div markdown="1"
      style="font-size: 80%; font-family: Arial Narrow, sans-serif;"
      class="hanging-indent-table">

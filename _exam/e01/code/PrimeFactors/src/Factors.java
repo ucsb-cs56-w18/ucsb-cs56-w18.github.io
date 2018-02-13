@@ -17,7 +17,8 @@ public class Factors extends ArrayList<Integer> {
     public void addNextFactor() {
 	int lastElement = 
 	    this.get(this.size() - 1);
-	for (int i=2; i<lastElement/2; i++) {
+	// in special case where last element is 4, need <= lastElement/2 not < 2
+	for (int i=2; i<=lastElement/2; i++) {
 	    if (lastElement % i == 0) {
 		this.replaceLastFactor(i);
 		this.addFactor(lastElement/i);
