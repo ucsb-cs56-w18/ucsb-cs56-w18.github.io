@@ -18,12 +18,11 @@ Will appear here, if any.
 
 ## Notices
 
-* You may **sit anywhere**, Except row D, and please leave one seat between students.
+* IGNORE SEAT NUMBER.  Leave it blank.
+* YOU MAY RIP OFF HANDOUTS
 * You may use **one sheet of notes** as usual.  Please write your name on it
 * **No talking** during the exam.  Please put all questions in writing on the blue sheet.
-* Please, for today **focus on the final exam only**.  
-* If you have other questions, Conrad has office hours tomorrow, Wednesday 01/20/2018, 2pm-3pm in HFH1113.  
-* Or, contact on Piazza to request an appointment.
+
 
 
 <div style="display:none;">
