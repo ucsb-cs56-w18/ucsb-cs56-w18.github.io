@@ -108,87 +108,79 @@ public abstract class Product {
 }
 {% endhighlight %}
 
-<h2 markdown="1" class="page-break-before">class `java.util.ArrayList<E>`</h2>
+<h2 markdown="1" class="page-break-before">Partial source code for `Factors.java`</h2>
 
-<div style="font-size:90%; font-family: Arial Narrow, sans-serif;">
+```java
+import java.util.ArrayList;
 
-The following excerpts from the javadoc for `java.util.ArrayList<E>` may be
-helpful to you in completing this exam.
+public class Factors extends ArrayList<Integer> {
 
-## Inheritance Hierarchy (complete)
+    public Factors(int [] nums) {
+    
+
+       ___________________________________________
+
+       for (int i: nums) {
+
+             ______________________________________
+
+	}
+
+       ___________________________________________
+    }
+
+    /* Precondition: this object contains a list of factors computed from some number.  
+       All but the last is guaranteed to be a prime number, and the factors are in non-decreasing
+       order (they stay the same, or go up, from lowest index to highest index.)   
+
+       Postcondition: If the last element is a prime number,
+        return the same ArrayList, unchanged.
+
+       Otherwise, take the last element, factor out the lowest prime factor, and replace 
+       the last element with two elements; the prime factor, and the product of the remaining
+        factors. 
+     */
+
+    public void addNextFactor() {
+	  int lastElement = 
+
+		  ____________________________________
+	  
+	  // in special case where last element is 4, need <= lastElement/2 not < 2
+	  for (int i=2; i<=lastElement/2; i++) {
+	    if (lastElement % i == 0) {
+	     	this.replaceLastFactor(i);
+		    this.addFactor(lastElement/i);
+		    return;
+	    }
+	  }
+    }
+
+	// NOTE: This method is complete and correct.
+	// You don't need it except to understand the context of the other code
+	
+    public static Factors primeFactors(int num) {
+	  Factors f = new Factors(new int []{num});
+	  int prevSize = 0;
+	  while ( f.size() != prevSize) {
+	    prevSize = f.size();
+	    f.addNextFactor();
+	  }
+	  return f;
+    }
+
+    /** replace last factor with the value i */
+    public void replaceLastFactor(int i) {
+
+		_________________________________
+    }
+
+    /**  add factor to end of list  */
+    public void addFactor(int f) {
+
+	  _____________________________	
+    }
+
+}
 
 ```
-java.lang.Object
-  java.util.AbstractCollection<E>
-    java.util.AbstractList<E>
-      java.util.ArrayList<E>
-```
-
-<div markdown="1"
-     style="font-size: 80%; font-family: Arial Narrow, sans-serif;"
-     class="hanging-indent-table">
-
-| All Implemented Interfaces: | `Serializable, Cloneable, Iterable<E>, Collection<E>, List<E>, RandomAccess` |
-| Direct Known Subclasses: | `AttributeList, RoleList, RoleUnresolvedList` |
-
-</div>
-
-## Constructors (complete)
-
-<div markdown="1" class="hanging-indent-table">
-
-| `ArrayList()` | Constructs an empty list with an initial capacity of ten.
-| `ArrayList(Collection<? extends E> c)` | Constructs a list containing the elements of the specified collection,<br>in the order they are returned by the collection's iterator. |
-| `ArrayList(int initialCapacity)` | Constructs an empty list with the specified initial capacity. |
-
-</div>
-
-## Most important methods, with brief description
-
-<div markdown="1" class="hanging-indent-table">
-
-| `boolean` | `add(E e)` | Appends the specified element to the end of this list. |
-| `void` | `add(int index, E element)` | Inserts the specified element at the specified position in this list. <br>Shifts the element currently at that position (if any) and any subsequent elements to the right (adds one to their indices).<br>throws `IndexOutOfBoundsException` if `(index < 0 || index > size())`|
-| `void` | `clear()` | Removes all of the elements from this list.|
-| `E` | `get(int index)` | Returns the element at the specified position in this list. |
-| `int` | `indexOf(Object o)` | Returns the index of the first occurrence of the specified element in this list, <br>or -1 if this list does not contain the element. |
-| `boolean` | `isEmpty()` | Returns true if this list contains no elements. |
-| `int`	|  `lastIndexOf(Object o)` | Returns the index of the last occurrence of the specified element in this list,<br>or -1 if this list does not contain the element. |
-| `E` | `remove(int index)` | Removes the element at the specified position in this list.|
-| `boolean` | `remove(Object o)` | Removes the first occurrence of the specified element from this list, if it is present. |
-| `E` | `set(int index, E element)` | Replaces the element at the specified position in this list with the specified element.<br>Returns the element previously at the specified position<br> throws `IndexOutOfBoundsException` if `(index < 0 || index >= size())`|
-| `int` | `size()` | Returns the number of elements in this list. |
-| `void` | `sort(Comparator<? super E> c)` | Sorts this list according to the order induced by the specified `Comparator`. |
-
-</div>
-
-## Additional methods, listed by method signature only.
-
-<div markdown="1" class="hanging-indent-table">
-
-| `boolean addAll(Collection<? extends E> c)` | `boolean	addAll(int index, Collection<? extends E> c)` |
-| `Object   clone()` |  `boolean  contains(Object o)` |
-| `void	   ensureCapacity(int minCapacity)` | `void forEach(Consumer<? super E> action)` |
-| `Iterator<E> iterator()` | `ListIterator<E>  listIterator()` |
-| `ListIterator<E> listIterator(int index)` | `boolean removeAll(Collection<?> c)` |
-| `boolean removeIf(Predicate<? super E> filter)` | `protected void removeRange(int fromIndex, int toIndex)` |
-| `void replaceAll(UnaryOperator<E> operator)` | `boolean retainAll(Collection<?> c)` |
-| `Spliterator<E>  spliterator()` | `List<E> subList(int fromIndex, int toIndex)`
-| `Object[] toArray()` | `<T> T[] toArray(T[] a)` |
-| `void    trimToSize()` | |
-
-</div>
-
-## Methods inherited from:
-
-<div markdown="1" class="hanging-indent-table">
-
-| `class java.util.AbstractList` | `equals, hashCode` |
-| `class java.util.AbstractCollection` | `containsAll, toString` |
-| `class java.lang.Object` | `finalize, getClass, notify, notifyAll, wait, wait, wait` |
-| `interface java.util.List` |  `containsAll, equals, hashCode` |
-| `interface java.util.Collection` |  `parallelStream, stream` |
-
-</div>
-</div>
-
