@@ -12,9 +12,11 @@ exam_end: "2018-02-13 12:15:00 -0800"
 http://ucsb-cs56-f17.github.io/exam/e03/typos/
 </div>
 
-<b >Typo corrections and hints for {{site.qtr}} exam {{page.num}}</b>
+## Hints/Clarifications:
 
-Will appear here, if any.
+For the `Factor.java` file: the pre- and post- conditions above `addNextFactor` 
+apply *only* to the method `addNextFactor`, not to any other
+method or constructor.
 
 ## Notices
 
