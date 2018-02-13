@@ -16,7 +16,9 @@ http://ucsb-cs56-f17.github.io/exam/e03/typos/
 
 * For the `Factors.java` file: the pre- and post- conditions above `addNextFactor`  
    apply *only* to the method `addNextFactor`, not to any other
-   method or constructor.
+   method or constructor.  
+    * NEW: That means, you don't need to worry about order in the constructor.
+        Just take the elements in the order they come.  
 * If the notation `for (int i: nums)` is unfamiliar; it was covered in the chapter. Do 
     your best to infer what it means, and answer on that basis.
 * For number 7, the blank should simply be filled with an expression that 
