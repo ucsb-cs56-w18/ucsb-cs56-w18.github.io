@@ -25,7 +25,7 @@
 
 
   <target name="run" description="run the main">
-    <java classname="Rational" classpath="build"/>
+    <java classname="Factors" classpath="build"/>
   </target>
 
   <target name="jar" depends="compile" description="create a jar file">
