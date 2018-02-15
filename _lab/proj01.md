@@ -28,7 +28,7 @@ you will need to indicate your preferences about which project you want to switc
 The available projects are listed here.  Additional projects may become available as/when other
 students indicate a preference to switch pairs or projects:
 
-<{{page.available-projects-link}}>
+[Available Projects]({{page.available-projects-link}})
 
 # Open Source Project Next Steps
 
