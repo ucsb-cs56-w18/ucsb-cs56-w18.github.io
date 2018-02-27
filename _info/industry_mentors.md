@@ -22,7 +22,7 @@ Similarly, being a UCSB CS alum, and more specifically, one that took CS56 with 
 
 You'll meet with between 4 and 6 pairs over the three hours, so you'll have between 20-40 minutes with each.
 
-Fill out this form to volunteer: http://bit.ly/cs56-w18-industry-mentors
+Fill out this form to volunteer: [http://bit.ly/cs56-w18-industry-mentors](http://bit.ly/cs56-w18-industry-mentors)
 
 ## Overview for students
 
