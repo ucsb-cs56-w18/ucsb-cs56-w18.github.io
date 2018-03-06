@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: proj02
-ready: false
+ready: true
 desc:  "Finishing up Legacy Code project"
 assigned: 2018-03-01 16:00:00.00-7
 due: 2018-03-14 23:59:00.00-8
