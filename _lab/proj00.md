@@ -2,7 +2,7 @@
 layout: lab
 num: proj00
 ready: true
-desc: "First look at Legacy Code"
+desc: "First look at Legacy Code (counts towards lab grade)"
 assigned: 2018-02-01 16:00:00.00-8
 due: 2018-02-09 17:00:00.00-8
 gauchospace_link: https://gauchospace.ucsb.edu/courses/mod/assign/view.php?id=938517
