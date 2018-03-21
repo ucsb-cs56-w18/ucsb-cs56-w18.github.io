@@ -17,7 +17,8 @@
 	    {% include exam-page-header-template.html %}
 	  </div> <!-- exam-page-header -->
 
-	  {% include exam-name-header-template.html %}
+	  {% capture use_seat %}{{page.seat}}{% endcapture %}
+	  {% include exam-name-header-template.html seat=use_seat %}
 
 	  <h1 style="clear:left;">EXAM: {{page.num}}: {{ page.desc }}</h1>
 	  
