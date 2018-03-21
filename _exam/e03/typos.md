@@ -12,6 +12,11 @@ exam_end: "2018-03-21 15:00:00 -0800"
 http://ucsb-cs56-w18.github.io/exam/e03/typos/
 </div>
 
+## Typos:
+
+* *p. 4, question 5, 1st paragraph*: ... you should refer to page <s>1</s> <b>2</b> of handout A...
+* *p. 4, question 5, 2nd paragraph*: ... The both try to represent a set of <s>set of</s> numbers ...
+
 ## Hints/Clarifications:
 
 ## Notices
