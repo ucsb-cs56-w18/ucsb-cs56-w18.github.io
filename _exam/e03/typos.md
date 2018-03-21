@@ -22,6 +22,13 @@ http://ucsb-cs56-w18.github.io/exam/e03/typos/
 ## Hints/Clarifications:
 
 * Questions 7 and 10 are worth 4 pts each.  (There is an awkward line break that makes that hard to see.)
+* *p. 9, question 14*: Immediately after `LottoPick merged=______`, yes, that is a second line of code right after it.
+   So, these are two *separate* lines in which you may enter code:
+   ```
+   LottoPick merged = ______________________
+   
+   _________________________________________;
+   ```
 
 ## Notices
 
