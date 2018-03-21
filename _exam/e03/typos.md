@@ -29,6 +29,9 @@ http://ucsb-cs56-w18.github.io/exam/e03/typos/
    
    _________________________________________;
    ```
+* `java.lang.Comparable<T>` is the interface that requires a class to implement `public int compareTo(T o)`
+* `java.util.Comparator<T>` is the interface that requires a class to implement `public int compare(T o1, T o2)`
+* `java.util.Collections.sort(List<T> list)` sorts according to "natural ordering".
 
 ## Notices
 
