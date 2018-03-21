@@ -31,6 +31,9 @@ public class LotteryPick extends ArrayList<Integer> {
 
     /** Sort the numbers in ascending order */
     public void sortNumbers() {
+	// do it with one line of code,
+	// taking advantage of the fact that
+	// java.lang.Integer implements Comparable<Integer>
 	java.util.Collections.sort(this);       
     }
 
@@ -64,6 +67,7 @@ public class LotteryPick extends ArrayList<Integer> {
 	LotteryPick merged = new LotteryPick(this);
 	merged.addAll(other);
 
+	merged.sortNumbers();
 	int dups = 0;
 	for (int i=1; i<merged.size(); i++) {
 	    if (merged.get(i)==merged.get(i-1))
