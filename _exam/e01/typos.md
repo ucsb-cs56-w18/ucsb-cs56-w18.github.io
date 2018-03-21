@@ -9,7 +9,7 @@ exam_end: "2018-02-13 12:15:00 -0800"
 {% include exam_clock.html %}
 
 <div style="display:none; clear:both;">
-http://ucsb-cs56-f17.github.io/exam/e03/typos/
+http://ucsb-cs56-w18.github.io/exam/e01/typos/
 </div>
 
 ## Hints/Clarifications:
