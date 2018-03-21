@@ -16,6 +16,7 @@ http://ucsb-cs56-w18.github.io/exam/e03/typos/
 
 * *p. 4, question 5, 1st paragraph*: ... you should refer to page <s>1</s> <b>2</b> of handout A...
 * *p. 4, question 5, 2nd paragraph*: ... The both try to represent a set of <s>set of</s> numbers ...
+* *p. 7, question 11, instructions*: "Fill in the code for this constructor from <s><tt>LotteryPick</tt></s> <tt>LottoPick</tt>
 
 ## Hints/Clarifications:
 
