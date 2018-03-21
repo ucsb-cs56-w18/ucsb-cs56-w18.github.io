@@ -21,6 +21,8 @@ http://ucsb-cs56-w18.github.io/exam/e03/typos/
 
 ## Hints/Clarifications:
 
+* Questions 7 and 10 are worth 4 pts each.  (There is an awkward line break that makes that hard to see.)
+
 ## Notices
 
 * YOU MAY RIP OFF HANDOUTS
