@@ -8,7 +8,7 @@ public class LotteryPick extends ArrayList<Integer> {
        Example:
        <code>LotteryPick myPicks(otherPicks);</code>
 
-       @param otherPicks Numbers to add to lottery pick
+       @param other Numbers to add to lottery pick
     */
     public LotteryPick(LotteryPick other) {
 	// use superclass constructor
@@ -37,7 +37,7 @@ public class LotteryPick extends ArrayList<Integer> {
 	java.util.Collections.sort(this);       
     }
 
-    /** Return true if there are no duplicates */	
+    /** Return true if there are no duplicates, and as side effect, sorts numbers */	
     public boolean unique() {
 	this.sortNumbers();
 	

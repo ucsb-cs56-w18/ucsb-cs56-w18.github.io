@@ -7,9 +7,9 @@ public class LottoPick {
     /**
        Initialize from another LottoPick
        Example:
-       <code>LottoPick myPicks(otherPicks);</code>
+       <code>LottoPick myPicks(other);</code>
 
-       @param otherPicks Numbers to add to lottery pick
+       @param other Numbers to add to lottery pick
     */
     public LottoPick(LottoPick other) {
 	// make sure to do a deep copy, not a shallow one
@@ -32,7 +32,7 @@ public class LottoPick {
     }
 
     public ArrayList<Integer> getPicks() {
-	return this.picks;
+        return new ArrayList<Integer>(this.picks);
     }
     
     /** Sort the numbers in ascending order */
@@ -43,7 +43,7 @@ public class LottoPick {
 	java.util.Collections.sort(picks);       
     }
 
-    /** Return true if there are no duplicates */	
+    /** Return true if there are no duplicates, and as side effect, sorts numbers */	    
     public boolean unique() {
 	this.sortNumbers();
 	
@@ -56,8 +56,9 @@ public class LottoPick {
     }
 
     /** Return the number of values matched, and as side effect
-	sorts both this LottoPick and the other passed as a param
-     @param other Another LottoPick value
+	sorts numbers in both LottoPick objects
+     @param first first LottoPick value to compare
+     @param second second LottoPick value to compare
      @return number of values matched
      @throws IllegalArgumentException if either this or other contains duplicates
     */

@@ -107,80 +107,107 @@ public abstract class Product {
     }
 }
 {% endhighlight %}
+<h1 markdown="1" class="page-break-before">LotteryPick and LottoPick</h1>
 
-<h2 markdown="1" class="page-break-before">Partial source code for `Factors.java`</h2>
+The classes LotteryPick and LottoPick are both used to represent a set of numbers that
+someone might choose for a lottery where numbered balls are chosen (e.g. 5 or 6 balls numbered 1-40, for example), and you win money depending on how many balls your picks match.
 
-```java
-import java.util.ArrayList;
+<h2 markdown="1">class `LotteryPick`</h2>
 
-public class Factors extends ArrayList<Integer> {
+The class `LotteryPick` uses inheritance (extending `java.util.ArrayList<Integer>` to
+implement the constructors and methods shown below in the excerpt of the javadoc.
 
-    public Factors(int [] nums) {
-    
+(Contrast this with `LottoPick`, which uses composition instead, and is discusssed on the bottom
+half of this page).
 
-       ___________________________________________
+<div style="font-size:90%; font-family: Arial Narrow, sans-serif;">
 
-       for (int i: nums) {
-
-             ______________________________________
-
-	}
-
-       ___________________________________________
-    }
-
-    /* Precondition: this object contains a list of factors computed from some number.  
-       All but the last is guaranteed to be a prime number, and the factors are in non-decreasing
-       order (they stay the same, or go up, from lowest index to highest index.)   
-
-       Postcondition: If the last element is a prime number,
-        return the same ArrayList, unchanged.
-
-       Otherwise, take the last element, factor out the lowest prime factor, and replace 
-       the last element with two elements; the prime factor, and the product of the remaining
-        factors. 
-     */
-
-    public void addNextFactor() {
-	  int lastElement = 
-
-		  ____________________________________
-	  
-	  // in special case where last element is 4, need <= lastElement/2 not < 2
-	  for (int i=2; i<=lastElement/2; i++) {
-	    if (lastElement % i == 0) {
-	     	this.replaceLastFactor(i);
-		    this.addFactor(lastElement/i);
-		    return;
-	    }
-	  }
-    }
-
-	// NOTE: This method is complete and correct.
-	// You don't need it except to understand the context of the other code
-	
-    public static Factors primeFactors(int num) {
-	  Factors f = new Factors(new int []{num});
-	  int prevSize = 0;
-	  while ( f.size() != prevSize) {
-	    prevSize = f.size();
-	    f.addNextFactor();
-	  }
-	  return f;
-    }
-
-    /** replace last factor with the value i */
-    public void replaceLastFactor(int i) {
-
-		_________________________________
-    }
-
-    /**  add factor to end of list  */
-    public void addFactor(int f) {
-
-	  _____________________________	
-    }
-
-}
+Inheritance Hierarchy (complete)
 
 ```
+java.lang.Object
+  java.util.AbstractCollection<E>
+    java.util.AbstractList<E>
+      java.util.ArrayList<java.lang.Integer>
+        LotteryPick
+```
+
+<div markdown="1"
+     style="font-size: 80%; font-family: Arial Narrow, sans-serif;"
+     class="hanging-indent-table">
+
+| All Implemented Interfaces: | `java.io.Serializable, java.lang.Cloneable, java.lang.Iterable<java.lang.Integer>, java.util.Collection<java.lang.Integer>, java.util.List<java.lang.Integer>, java.util.RandomAccess` |
+
+</div>
+
+## Constructors (complete)
+
+<div markdown="1" class="hanging-indent-table">
+
+| `LotteryPick(int[] nums)` | Initialize from `int` array. |
+| `LotteryPick(LotteryPick other)` | Initialize from another `LotteryPick`.<br> Example: `LotteryPick myPicks(otherPicks);` |
+
+
+
+</div>
+
+## Most important methods, with brief description
+
+<div markdown="1" class="hanging-indent-table">
+
+|`int`| `numMatched(LotteryPick other)` | Return the number of values matched, and as side effect sorts both this LotteryPick and the other passed as a param |
+|`void`|`sortNumbers()` | Sort the numbers in ascending order |
+|`boolean` | `unique()` | Return true if there are no duplicates, and as side effect, sorts numbers |
+
+# Important Note
+
+A Be aware that this class inherits from `java.util.ArrayList<Integer>`.  You have a summary of the javadoc for `java.util.ArrayList<Integer>` available to you on [Handout B](../handout_b)
+</div>
+
+<hr>
+<hr>
+<hr>
+
+<h2  markdown="1">class `LottoPick`</h2>
+
+The class `LottoPick` uses composition (it "has-a" `java.util.ArrayList<Integer>` as a private
+data member)  to implement the constructors and methods shown below in the excerpt of the javadoc.
+
+<div style="font-size:90%; font-family: Arial Narrow, sans-serif;">
+
+Inheritance Hierarchy (complete)
+
+```
+java.lang.Object
+  LottoPick
+```
+
+There are no implemented interfaces listed in the javadoc.
+
+
+## Constructors (complete)
+
+<div markdown="1" class="hanging-indent-table">
+
+| `Lotto(int[] nums)` | Initialize from `int` array. |
+| `LottoPick(LottoPick other)` | Initialize from another `LottoPick`.<br> Example: `LottoPick myPicks(other);` |
+
+
+
+</div>
+
+## Most important methods, with brief description
+
+<div markdown="1" class="hanging-indent-table">
+
+
+|`boolean`|`equals(java.lang.Object o)`|Override equals to compare picks.  Uses the implementation of `equals` from `java.util.ArrayList<Integer>`, thus order will matter. |
+|`java.util.ArrayList<java.lang.Integer>`|`getPicks()`|return copy of wrapped `ArrayList<Integer> (not reference to original)`|
+|`int`|`hashCode()`| returns `hashCode` value of wrapped `ArrayList` |
+|`static int`|`numMatched(LottoPick first, LottoPick second)`|Return the number of values matched, and as side effect sorts numbers in both LottoPick objects|
+|`void`|`sortNumbers()`|Sort the numbers in ascending order|
+|`boolean`|`unique()` | Return true if there are no duplicates, and as side effect, sorts numbers |
+
+# Important Note
+
+Pay attention to the fact that the `numMatched` method is `static` in `LottoPick`. 
